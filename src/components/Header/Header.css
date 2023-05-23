@@ -53,6 +53,9 @@ Header
 
 .nav__toggle-icon {
     display: none;
+    height: 5rem;
+    width: 5rem;
+    cursor: pointer;
 }
 
 .nav__toggle-line {
@@ -64,10 +67,10 @@ Header
 .nav__toggle-line::after {
     content: '';
     border-radius: 2rem;
-    cursor: pointer;
     width: 4.5rem;
     height: 0.4rem;
     background-color: var(--primary-color);
+    transition: all 200ms ease-in;
 }
 
 .nav__toggle-line::before {
@@ -77,9 +80,20 @@ Header
 
 .nav__toggle-line::after {
     position: absolute;
-    top: -1rem;
+    bottom: 1rem;
 }
 
+.nav__toggle-icon--open .nav__toggle-line {
+    background-color: transparent;
+}
+
+.nav__toggle-icon--open .nav__toggle-line::before {
+    transform: translateY(-1rem) rotate(-45deg);
+}
+
+.nav__toggle-icon--open .nav__toggle-line::after {
+    transform: translateY(1rem) rotate(45deg);
+}
 
 
 
@@ -107,7 +121,8 @@ Responsive Header
     }
 
     .nav__toggle-icon {
-        display: block;
+        display: grid;
+        place-items: center;
     }
 }
 

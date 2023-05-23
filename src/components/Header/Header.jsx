@@ -1,7 +1,15 @@
-import React from 'react'
+import React, { useState } from 'react'
 import './Header.css'
 
 export default function Header() {
+    const [isChangeBurger, setisChangeBurger] = useState(false)
+
+
+    const changeToggle = () => {
+        setisChangeBurger((prev) => !prev)
+    }
+
+
     return (
         <header className='header'>
             <div className="container">
@@ -43,7 +51,7 @@ export default function Header() {
                         </li>
                     </ul>
 
-                    <div className="nav__toggle-icon">
+                    <div className={`nav__toggle-icon ${isChangeBurger ? 'nav__toggle-icon--open' : ''} `} onClick={changeToggle}>
                         <div className="nav__toggle-line"></div>
                     </div>
                 </nav>
@@ -51,3 +59,4 @@ export default function Header() {
         </header>
     )
 }
+
