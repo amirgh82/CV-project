@@ -7,6 +7,25 @@
     --shadow-color: rgba(19, 182, 255, 0.24);
     --app-bg-color: #fff;
     --section-bg-color: #fff;
+    --primary-color: #0aebad;
+}
+
+
+/* 
+
+Reset Style
+
+*/
+
+
+a {
+    text-decoration: none;
+}
+
+ul {
+    list-style: none;
+    padding-left: 0;
+    margin: 0;
 }
 
 /* 

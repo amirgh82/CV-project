@@ -1,0 +1,54 @@
+/* 
+
+Header
+
+*/
+
+
+.header {}
+
+.nav {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 1.5rem 0;
+}
+
+.nav__logo {
+    color: var(--primary-color);
+    font-family: 'Popins Black';
+    font-size: 5rem;
+    margin: 0;
+}
+
+.menu {
+    display: flex;
+
+}
+
+.menu__item {
+    margin-left: 4rem;
+}
+
+.menu__item:first-child {
+    margin-left: 0;
+}
+
+.menu__link {
+    /* 
+    تا موقع margin یا paddign دادن مشکلی پیش نیاد. display: inline-block ; بهتره به تگ های لینک 
+    */
+    display: inline-block;
+    color: var(--text-color);
+    font-family: 'Popins Medium';
+}
+
+.menu__link-active {
+    color: var(--primary-color);
+}
+
+.nav__toggle-icon {
+    display: none;
+}
+
+.nav__toggle-line {}
