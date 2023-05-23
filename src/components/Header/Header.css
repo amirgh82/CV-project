@@ -8,6 +8,10 @@ Header
 .header {
     background-color: var(--section-bg-color);
     box-shadow: 0 0.5rem 4rem rgba(4, 195, 255, 0.16);
+    z-index: 100;
+    position: fixed;
+    right: 0;
+    left: 0;
 }
 
 .nav {
@@ -27,6 +31,8 @@ Header
 
 .menu {
     display: flex;
+
+    z-index: 100;
 }
 
 .menu__item {
@@ -45,6 +51,11 @@ Header
     color: var(--text-color);
     font-family: 'Popins Medium';
     font-weight: bold;
+    transition: color 200ms ease-in-out;
+}
+
+.menu__link:hover {
+    color: var(--primary-color);
 }
 
 .menu__link-active {
@@ -131,7 +142,7 @@ Responsive Header
         overflow: hidden;
     }
 
-    .menu--open{
+    .menu--open {
         height: 35rem;
     }
 
@@ -142,6 +153,24 @@ Responsive Header
     .nav__toggle-icon {
         display: grid;
         place-items: center;
+    }
+
+    .cover {
+        position: fixed;
+        width: 100%;
+        height: 100%;
+        background-color: rgba(0, 0, 0, 5%);
+        right: 0;
+        left: 0;
+        top: 0;
+        z-index: -1;
+        opacity: 0;
+        transition: all 200ms ease-in;
+    }
+
+    .cover-show {
+        opacity: 1;
+        z-index: 99;
     }
 }
 
