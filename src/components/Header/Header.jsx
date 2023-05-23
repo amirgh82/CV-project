@@ -18,7 +18,7 @@ export default function Header() {
                         WA.
                     </h1>
 
-                    <ul className="menu">
+                    <ul className={`menu ${isChangeBurger ? 'menu--open' : ''} `}>
                         <li className="menu__item">
                             <a href="#" className="menu__link menu__link-active">
                                 Home

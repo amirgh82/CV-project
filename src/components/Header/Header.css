@@ -117,7 +117,26 @@ Responsive Header
 
 @media screen and (max-width:768px) {
     .menu {
-        display: none;
+        position: absolute;
+        top: 100%;
+        width: 100%;
+        right: 0;
+        left: 0;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        background-color: var(--section-bg-color);
+        transition: all 200ms ease-in;
+        height: 0;
+        overflow: hidden;
+    }
+
+    .menu--open{
+        height: 35rem;
+    }
+
+    .menu__item {
+        margin: 2rem 0;
     }
 
     .nav__toggle-icon {
