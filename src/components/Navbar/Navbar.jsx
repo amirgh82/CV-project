@@ -1,5 +1,5 @@
 import React, { useState } from 'react'
-import './Header.css'
+import './Navbar.css'
 
 export default function Header() {
     const [isChangeBurger, setisChangeBurger] = useState(false)
