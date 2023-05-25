@@ -41,4 +41,20 @@ body {
     font-family: 'Poppins';
     font-size: 1.6rem;
     line-height: 1.5;
+    color: var(--text-color);
+    background-color: var(--app-bg-color);
+}
+
+/* 
+
+Helpers class
+
+*/
+
+.align-items-center{
+    align-items: center;
+}
+
+.justify-content-center{
+    justify-content: center;
 }

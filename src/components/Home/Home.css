@@ -1,0 +1,73 @@
+.home {
+    margin-top: 8rem;
+}
+
+.home-content {}
+
+
+
+.home__name {
+    font-family: "Poppins Semibold";
+    color: var(--primary-color);
+    font-size: 2.5rem;
+    margin: 0;
+}
+
+.home__name span {
+    color: #f57f17;
+}
+
+.home__title {
+    font-family: "Poppins Bold";
+    color: var(--primary-color);
+    font-size: 5rem;
+    margin: 0;
+}
+
+.home__caption {
+    font-family: "Poppins Regular";
+    margin: 1rem 0 2rem 0;
+    font-weight: bold;
+    opacity: 0.7;
+}
+
+.home__links-wrapper {
+    display: flex;
+    gap: 3rem;
+}
+
+.home__links-wrapper :nth-child(2) {
+    background-color: #f57f17;
+    box-shadow: 0 1.5rem 4rem #f57f17;
+}
+
+.home__photo {
+    background-image: url('./../../../public/images/header-avatar.jpg');
+    background-position: center top;
+    background-repeat: no-repeat;
+    background-size: cover;
+    width: 55rem;
+    height: 55rem;
+    border-radius: 100%;
+    border: 2.5rem solid #fff;
+    box-shadow: 0 0 4rem rgba(96, 233, 255, 27%);
+}
+
+
+@media screen and (max-width:1400px) {
+    .home__photo {
+        width: 45rem;
+        height: 45rem;
+    }
+}
+
+@media screen and (max-width:1200px){
+    .home__photo {
+        width: 35rem;
+        height: 35rem;
+    }
+}
+
+@media screen and (max-width:992px){
+    
+}

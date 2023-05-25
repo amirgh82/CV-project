@@ -1,0 +1,14 @@
+.app-btn {
+    background-color: var(--primary-color);
+    box-shadow: 0 1.5rem 4rem var(--primary-color);
+    width: 16rem;
+    height: 5rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: #fff;
+    border-radius: 4rem;
+    font-weight: bold;
+    font-family: "popins Semibold";
+
+}
