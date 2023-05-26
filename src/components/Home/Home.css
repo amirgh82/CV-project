@@ -1,11 +1,15 @@
 .home {
     margin-top: 8rem;
+    background-image: url('./../../../public/images/shapes/header-shape.svg');
+    background-repeat: no-repeat;
+    background-position: bottom;
+    height: 85rem;
 }
 
 .home__name {
     font-family: "Poppins Semibold";
     color: var(--primary-color);
-    font-size: 2.5rem;
+    font-size: 2.8rem;
     margin: 0;
 }
 
@@ -46,12 +50,15 @@
     width: 55rem;
     height: 55rem;
     border-radius: 100%;
-    border: 2.5rem solid #fff;
+    border: 2.5rem solid var(--section-bg-color);
     box-shadow: 0 0 4rem rgba(96, 233, 255, 27%);
 }
 
 
 @media screen and (max-width:1400px) {
+    .home{
+        height: 76rem;
+    }
     .home__photo {
         width: 45rem;
         height: 45rem;
@@ -59,6 +66,9 @@
 }
 
 @media screen and (max-width:1200px) {
+    .home{
+        height: 70rem;
+    }
     .home__photo {
         width: 35rem;
         height: 35rem;
@@ -82,6 +92,7 @@
 
     .home {
         margin-top: 6rem;
+        background-image: none;
     }
 
     .home__caption {
@@ -89,7 +100,11 @@
     }
 }
 
-@media screen and (max-width:762px) {}
+@media screen and (max-width:762px) {
+    .home__photo {
+        border-width: 1.5rem;
+    }
+}
 
 @media screen and (max-width:576px) {
     .home__title {
@@ -103,14 +118,14 @@
 
 @media screen and (max-width:420px) {
     .home__title {
-        font-size: 3.5rem;
+        font-size: 2.5rem;
         text-align: center;
     }
 
     .home__photo {
         width: 25rem;
         height: 25rem;
-       border-width: 1rem;
+        border-width: 1rem;
     }
 
     .home__links-wrapper {
