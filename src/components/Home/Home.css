@@ -114,6 +114,9 @@
     .home__name {
         font-size: 2rem;
     }
+    .home__links-wrapper {
+        justify-content: center;
+    }
 }
 
 @media screen and (max-width:420px) {

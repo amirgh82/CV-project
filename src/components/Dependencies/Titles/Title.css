@@ -13,6 +13,7 @@
 .section-head-caption {
     color: var(--text-color);
     margin: 0.5rem 0 2rem 0;
+    letter-spacing: 0.25rem;
 }
 
 .section-head-line {

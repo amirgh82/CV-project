@@ -35,8 +35,10 @@ export default function About() {
                             <li className="about-list__item">Interaction Design</li>
                             <li className="about-list__item">Supper Support</li>
                         </ul>
-                        <Button>Hire me</Button>
-                        <Button >Get Resume</Button>
+                        <div className="home__links-wrapper">
+                            <Button>Hire me</Button>
+                            <Button >Get Resume</Button>
+                        </div>
                     </div>
                 </div>
             </div>

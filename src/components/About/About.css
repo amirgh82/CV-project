@@ -1,3 +1,93 @@
-.aboutes {
+.aboutus {
     margin-top: 6rem;
+}
+
+.about {
+    display: flex;
+    background-color: var(--section-bg-color);
+    box-shadow: 0 0 4rem rgba(96, 233, 255, 27%);
+    min-height: 62rem;
+}
+
+.about__cover {
+    flex-basis: 48%;
+}
+
+.about__content {
+    flex-basis: 52%;
+    padding: 4rem;
+}
+
+.about__img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+.about__titile {
+    font-family: 'Popins SemiBold';
+    font-size: 2.4rem;
+    margin-top: 0;
+    margin-bottom: 1rem;
+}
+
+.about__description {
+    margin: 0 0 6rem 0;
+}
+
+.about__list-title {
+    color: var(--primary-color);
+    font-family: 'Popins SemiBold';
+    font-size: 1.8rem;
+    margin-top: 0;
+    margin-bottom: 1rem;
+}
+
+.about-list {
+    margin-bottom: 3rem;
+    margin-left: 1rem;
+}
+
+.about-list__item {
+    margin-bottom: 1rem;
+    position: relative;
+    padding-left: 2.5rem;
+}
+
+.about-list__item:last-child {
+    margin-bottom: 0;
+}
+
+.about-list__item::before {
+    content: '';
+    position: absolute;
+    left: 0;
+    top: 0;
+    bottom: 0;
+    margin: auto;
+    width: 1.5rem;
+    height: 1.5rem;
+    background-color: #f57f17;
+    border-radius: 100%;
+}
+
+@media screen and (max-width:1200px){
+    .about__cover,.about__content{
+        flex-basis: 50%;
+    }
+}
+
+@media screen and (max-width:992px) {
+
+    .about{
+        flex-direction: column;
+    }
+
+    .about__cover,.about__content{
+        flex-basis: auto;
+    }
+
+    .about__content{
+        padding: 2rem 4rem;
+    }
 }
