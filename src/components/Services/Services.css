@@ -1,0 +1,50 @@
+
+.service {
+    color: #fff;
+    text-align: center;
+    padding: 7rem 4rem;
+    height:100%;
+    overflow: hidden;
+}
+
+
+.Service__title {
+    font-size: 2.4rem;
+    font-family: 'Poppins Bold';
+    margin: 0 0 1.6rem 0;
+}
+
+.service__caption {
+    margin: 0;
+}
+
+.service-purple {
+    background-color: #8540ff;
+}
+
+.service-yellow {
+    background-color: #ffc50c;
+}
+
+.service-pink {
+    background-color: #ec407a;
+}
+
+.service-orange {
+    background-color: #ff6331;
+}
+
+.service-blue {
+    background-color: #138fff;
+}
+
+.service-green {
+    background-color: #49af46;
+}
+
+
+@media screen and (max-width:1200px){
+    .service{
+        padding: 7rem 2rem;
+    }
+}
