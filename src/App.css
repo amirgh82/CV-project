@@ -59,3 +59,11 @@ Helpers class
 .justify-content-center{
     justify-content: center;
 }
+
+.skew-reset{
+    transform: skewY(6deg);
+}
+
+.h-full{
+    height: 100%;
+}
