@@ -27,7 +27,7 @@ export default function Resume() {
                     ]}
                 </Title>
                 <div className="row">
-                    <div className="col-4">
+                    <div className="col-12 col-lg-4">
                         <ul className="resume-list h-full">
 
                             {datas.map((data, index) => (
@@ -39,7 +39,7 @@ export default function Resume() {
 
                         </ul>
                     </div>
-                    <div className="col-8">
+                    <div className="col-12 col-lg-8">
                         <div className="resume-content resume-content--show" id='education' >
 
 
