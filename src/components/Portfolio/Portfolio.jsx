@@ -19,7 +19,7 @@ export default function Portfolio() {
                     ]}
                 </Title>
                 <ul className="portfolio-list">
-                    <li className="portfolio-list__item">All Work</li>
+                    <li className="portfolio-list__item portfolio-list__item--active">All Work</li>
                     <li className="portfolio-list__item">Illustration</li>
                     <li className="portfolio-list__item">Animation</li>
                     <li className="portfolio-list__item">App Ui</li>
@@ -38,34 +38,34 @@ export default function Portfolio() {
                         pagination={{ clickable: true }}
                     >
                         <SwiperSlide>
-                            <img src="/images/portfolio-1.jpg" alt="" />
+                            <img className='portfolio-content__img' src="/images/portfolio-1.jpg" alt="" />
                         </SwiperSlide>
                         <SwiperSlide>
-                            <img src="/images/portfolio-2.jpg" alt="" />
-                        </SwiperSlide>
-
-                        <SwiperSlide>
-                            <img src="/images/portfolio-3.jpg" alt="" />
-                        </SwiperSlide>
-                        <SwiperSlide>
-                            <img src="/images/portfolio-1.jpg" alt="" />
-                        </SwiperSlide>
-                        <SwiperSlide>
-                            <img src="/images/portfolio-2.jpg" alt="" />
+                            <img className='portfolio-content__img' src="/images/portfolio-2.jpg" alt="" />
                         </SwiperSlide>
 
                         <SwiperSlide>
-                            <img src="/images/portfolio-3.jpg" alt="" />
+                            <img className='portfolio-content__img' src="/images/portfolio-3.jpg" alt="" />
                         </SwiperSlide>
                         <SwiperSlide>
-                            <img src="/images/portfolio-1.jpg" alt="" />
+                            <img className='portfolio-content__img' src="/images/portfolio-1.jpg" alt="" />
                         </SwiperSlide>
                         <SwiperSlide>
-                            <img src="/images/portfolio-2.jpg" alt="" />
+                            <img className='portfolio-content__img' src="/images/portfolio-2.jpg" alt="" />
                         </SwiperSlide>
 
                         <SwiperSlide>
-                            <img src="/images/portfolio-3.jpg" alt="" />
+                            <img className='portfolio-content__img' src="/images/portfolio-3.jpg" alt="" />
+                        </SwiperSlide>
+                        <SwiperSlide>
+                            <img className='portfolio-content__img' src="/images/portfolio-1.jpg" alt="" />
+                        </SwiperSlide>
+                        <SwiperSlide>
+                            <img className='portfolio-content__img' src="/images/portfolio-2.jpg" alt="" />
+                        </SwiperSlide>
+
+                        <SwiperSlide>
+                            <img className='portfolio-content__img' src="/images/portfolio-3.jpg" alt="" />
                         </SwiperSlide>
 
                     </Swiper>

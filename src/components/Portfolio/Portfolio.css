@@ -1,3 +1,38 @@
 .portfolio {
-    margin-bottom: 20rem;
+    margin-top: 20rem;
+}
+
+.portfolio-list {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    /* gap: 3rem; */
+    margin-bottom: 4rem;
+}
+
+.portfolio-list__item {
+    cursor: pointer;
+    border-radius: 4rem;
+    padding: 1rem 4rem;
+}
+
+.portfolio-list__item--active {
+    color: #fff;
+    background-color: var(--primary-color);
+}
+
+
+.portfolio-content {}
+
+.portfolio-content__img {}
+
+.swiper-pagination-bullet {
+    width: 2rem !important;
+    height: 2rem !important;
+    border: 2px solid #bfbebe !important;
+    background: #fff !important;
+}
+
+.swiper-pagination-bullet-active {
+    background: var(--primary-color)!important;
 }
