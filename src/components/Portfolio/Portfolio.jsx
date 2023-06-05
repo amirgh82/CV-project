@@ -1,8 +1,9 @@
 import React, { useState, useEffect } from 'react';
 import './Portfolio.css';
 import Title from '../Dependencies/Titles/Title';
+import { swiperData } from '../../data/Data';
 import { Swiper, SwiperSlide } from 'swiper/react';
-import SwiperCore, { Pagination } from 'swiper';
+import { Pagination } from 'swiper';
 import 'swiper/swiper-bundle.css';
 import "swiper/css";
 import "swiper/css/pagination";
@@ -12,9 +13,10 @@ import "swiper/css/pagination";
 
 export default function Portfolio() {
 
-
+    const [swiperDatas, setSwiperDatas] = useState(swiperData)
+    const [swiperSelected, setSwiperSelected] = useState(swiperData[0])
+    const [listSelected, setListSelected] = useState(1)
     const [slidesPerView, setSlidesPerView] = useState(2);
-    const [spaceBetween, setSpaceBetween] = useState(30)
 
     useEffect(() => {
         const handleResize = () => {
@@ -35,6 +37,13 @@ export default function Portfolio() {
         };
     }, []);
 
+    const selectListHandler = (id) => {
+        setListSelected(id)
+        let swiperData = swiperDatas
+        let itemSelected = swiperData.find(dataSelected => dataSelected.id === id)
+        setSwiperSelected(itemSelected)
+    }
+
 
 
     return (
@@ -46,54 +55,26 @@ export default function Portfolio() {
                         'Check In Our lastest Works'
                     ]}
                 </Title>
+
                 <ul className="portfolio-list">
-                    <li className="portfolio-list__item portfolio-list__item--active">All Work</li>
-                    <li className="portfolio-list__item">Illustration</li>
-                    <li className="portfolio-list__item">Animation</li>
-                    <li className="portfolio-list__item">App Ui</li>
-                    <li className="portfolio-list__item">Web Ui</li>
-                    <li className="portfolio-list__item">Social Media</li>
-                    <li className="portfolio-list__item">Print Design</li>
+                    {swiperDatas.map(data => (
+                        <li className={`portfolio-list__item ${listSelected === data.id ? 'portfolio-list__item--active' : ''}`}
+                            onClick={() => selectListHandler(data.id)}>{data.title}</li>
+                    ))}
                 </ul>
 
                 <div className="portfolio-content">
                     <Swiper
                         slidesPerView={slidesPerView}
                         modules={[Pagination]}
-                        spaceBetween={spaceBetween}
+                        spaceBetween={30}
                         pagination={{ clickable: true }}
                     >
-                        <SwiperSlide>
-                            <img className='portfolio-content__img' src="/images/portfolio-1.jpg" alt="" />
-                        </SwiperSlide>
-                        <SwiperSlide>
-                            <img className='portfolio-content__img' src="/images/portfolio-2.jpg" alt="" />
-                        </SwiperSlide>
-
-                        <SwiperSlide>
-                            <img className='portfolio-content__img' src="/images/portfolio-3.jpg" alt="" />
-                        </SwiperSlide>
-                        <SwiperSlide>
-                            <img className='portfolio-content__img' src="/images/portfolio-1.jpg" alt="" />
-                        </SwiperSlide>
-                        <SwiperSlide>
-                            <img className='portfolio-content__img' src="/images/portfolio-2.jpg" alt="" />
-                        </SwiperSlide>
-
-                        <SwiperSlide>
-                            <img className='portfolio-content__img' src="/images/portfolio-3.jpg" alt="" />
-                        </SwiperSlide>
-                        <SwiperSlide>
-                            <img className='portfolio-content__img' src="/images/portfolio-1.jpg" alt="" />
-                        </SwiperSlide>
-                        <SwiperSlide>
-                            <img className='portfolio-content__img' src="/images/portfolio-2.jpg" alt="" />
-                        </SwiperSlide>
-
-                        <SwiperSlide>
-                            <img className='portfolio-content__img' src="/images/portfolio-3.jpg" alt="" />
-                        </SwiperSlide>
-
+                        {swiperSelected.img.map(img => (
+                            <SwiperSlide>
+                                <img className='portfolio-content__img' src={img} alt="" />
+                            </SwiperSlide>
+                        ))}
                     </Swiper>
                 </div>
             </div>
