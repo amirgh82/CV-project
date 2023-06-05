@@ -1,0 +1,47 @@
+.contactus {
+    margin-top: 20rem;
+    margin-bottom: 10rem;
+}
+
+.contactus__wrapper {
+    background-image: url(../../../public/images/map.jpg);
+    background-position: center;
+    background-size: cover;
+    height: 60rem;
+}
+
+.contactus__map {}
+
+.contactus__icon {}
+
+.contact {
+    background-color: var(--app-bg-color);
+    box-shadow: 0 0 4rem rgba(19, 182, 255, 24%);
+    max-width: 50rem;
+    padding: 5rem 4rem;
+    margin-left: auto;
+}
+
+.contact__title {
+    font-family: 'Poppins Bold';
+    font-size: 3.2rem;
+    color: var(--primary-color);
+    margin: 0;
+}
+
+.contact__form {
+    display: flex;
+    flex-direction: column;
+    gap: 2rem;
+    margin-top: 2rem;
+}
+
+.contact__input {
+    border: none;
+    outline: none;
+    padding: 1.5rem 2rem;
+}
+
+.contact__input--textarea {}
+
+.contact__Submit {}
