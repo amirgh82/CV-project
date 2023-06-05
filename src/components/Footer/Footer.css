@@ -1,0 +1,36 @@
+.footer {
+    padding: 2rem 0;
+    background-color: var(--app-bg-color);
+}
+
+.footer__wrapper {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.footer__copy-right {
+    font-family: 'Poppins SemiBold';
+    letter-spacing: 0.4rem;
+}
+
+.footer__socials {
+    display: flex;
+    gap: 1rem;
+}
+
+.footer__social-link {
+    width: 5rem;
+    height: 5rem;
+    border-radius: 100%;
+    background-color: #1f2935;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color:var(--app-bg-color);
+    transition: all 0.2s ease;
+}
+
+.footer__social-link:hover{
+    background-color: var(--primary-color);
+}

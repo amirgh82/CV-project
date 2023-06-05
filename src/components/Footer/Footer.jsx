@@ -1,8 +1,9 @@
 import React from 'react'
 import './Footer.css'
-import { BiLogoFacebookCircle, BiLogoPinterest } from 'react-icons/bi'
+import { BsPinterest } from 'react-icons/bs'
+import { BsFacebook } from 'react-icons/bs'
 import { TbBrandWordpress } from 'react-icons/tb'
-import { FaVolleyball } from 'react-icons/fa'
+import { FaBasketballBall } from 'react-icons/fa'
 import { AiOutlineSkype } from 'react-icons/ai'
 export default function Footer() {
     return (
@@ -12,10 +13,10 @@ export default function Footer() {
                     <p className="footer__copy-right">© 2019 createuiux. All rights reserved.</p>
                     <div className="footer__socials">
                         <a href="#" className="footer__social-link"></a>
-                        <a href="#" className="footer__social-link"><BiLogoFacebookCircle /></a>
+                        <a href="#" className="footer__social-link"><BsFacebook /></a>
                         <a href="#" className="footer__social-link"><TbBrandWordpress /></a>
-                        <a href="#" className="footer__social-link"><FaVolleyball /></a>
-                        <a href="#" className="footer__social-link"><BiLogoPinterest /></a>
+                        <a href="#" className="footer__social-link"><FaBasketballBall /></a>
+                        <a href="#" className="footer__social-link"><BsPinterest /></a>
                         <a href="#" className="footer__social-link"><AiOutlineSkype /></a>
                     </div>
                 </div>
