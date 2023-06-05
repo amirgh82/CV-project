@@ -39,7 +39,7 @@ export default resumeData;
 
 export const swiperData = [
     { id: 1, title: 'All Work', img: ['/images/portfolio-1.jpg', '/images/portfolio-2.jpg', '/images/portfolio-3.jpg', '/images/portfolio-1.jpg', '/images/portfolio-2.jpg', '/images/portfolio-3.jpg'] },
-    { id: 2, title: 'Illustration', img: ['/images/portfolio-1.jpg', '/images/portfolio-3.jpg'] },
+    { id: 2, title: 'Illustration', img: ['/images/portfolio-1.jpg', '/images/portfolio-3.jpg' , '/images/portfolio-1.jpg', '/images/portfolio-3.jpg'] },
     { id: 3, title: 'Animation', img: ['/images/portfolio-2.jpg',] },
     { id: 4, title: 'App Ui', img: ['/images/portfolio-2.jpg', '/images/portfolio-3.jpg'] },
     { id: 5, title: 'Web Ui', img: ['/images/portfolio-1.jpg',] },
