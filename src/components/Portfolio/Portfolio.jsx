@@ -1,14 +1,42 @@
-import React from 'react'
-import './Portfolio.css'
-import Title from '../Dependencies/Titles/Title'
+import React, { useState, useEffect } from 'react';
+import './Portfolio.css';
+import Title from '../Dependencies/Titles/Title';
 import { Swiper, SwiperSlide } from 'swiper/react';
-import { Pagination } from 'swiper';
+import SwiperCore, { Pagination } from 'swiper';
+import 'swiper/swiper-bundle.css';
 import "swiper/css";
 import "swiper/css/pagination";
 
 
 
+
 export default function Portfolio() {
+
+
+    const [slidesPerView, setSlidesPerView] = useState(2);
+    const [spaceBetween, setSpaceBetween] = useState(30)
+
+    useEffect(() => {
+        const handleResize = () => {
+            if (window.innerWidth >= 998) {
+                setSlidesPerView(3);
+            } else if (window.innerWidth >= 768) {
+                setSlidesPerView(2);
+            } else {
+                setSlidesPerView(1);
+            }
+        };
+
+        handleResize();
+
+        window.addEventListener('resize', handleResize);
+        return () => {
+            window.removeEventListener('resize', handleResize);
+        };
+    }, []);
+
+
+
     return (
         <section className="portfolio">
             <div className="container">
@@ -30,11 +58,9 @@ export default function Portfolio() {
 
                 <div className="portfolio-content">
                     <Swiper
-                        onSwiper={(swiper => console.log(swiper))}
+                        slidesPerView={slidesPerView}
                         modules={[Pagination]}
-                        spaceBetween={50}
-                        slidesPerView={3}
-                        onSlideChange={() => console.log('Slide Chenged')}
+                        spaceBetween={spaceBetween}
                         pagination={{ clickable: true }}
                     >
                         <SwiperSlide>

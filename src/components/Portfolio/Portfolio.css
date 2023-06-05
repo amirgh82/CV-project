@@ -6,14 +6,15 @@
     display: flex;
     justify-content: center;
     align-items: center;
-    /* gap: 3rem; */
     margin-bottom: 4rem;
+    flex-wrap: wrap;
 }
 
 .portfolio-list__item {
     cursor: pointer;
     border-radius: 4rem;
     padding: 1rem 4rem;
+    transition: all 200ms ease-in;
 }
 
 .portfolio-list__item--active {
@@ -24,15 +25,22 @@
 
 .portfolio-content {}
 
-.portfolio-content__img {}
+.portfolio-content__img {
+    width: 100%;
+}
+
+.swiper-pagination {
+    position: static !important;
+    margin-top: 1rem;
+}
 
 .swiper-pagination-bullet {
-    width: 2rem !important;
-    height: 2rem !important;
-    border: 2px solid #bfbebe !important;
+    width: 1.8rem !important;
+    height: 1.8rem !important;
+    border: 2px solid var(--primary-color) !important;
     background: #fff !important;
 }
 
 .swiper-pagination-bullet-active {
-    background: var(--primary-color)!important;
+    background: var(--primary-color) !important;
 }
