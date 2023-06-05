@@ -1,6 +1,5 @@
 .contactus {
     margin-top: 20rem;
-    margin-bottom: 10rem;
 }
 
 .contactus__wrapper {
@@ -32,7 +31,7 @@
 .contact {
     background-color: var(--app-bg-color);
     box-shadow: 0 0 4rem rgba(19, 182, 255, 24%);
-    max-width: 50rem;
+    max-width: 55rem;
     padding: 5rem 4rem;
     margin-left: auto;
 }
@@ -80,4 +79,19 @@
     font-family: 'Poppins SemiBold';
     font-size: 1.8rem;
     cursor: pointer;
+}
+
+@media screen and (max-width:992px) {
+    .contactus__map{
+        display: none;
+    }
+    .contact{
+        margin: 0 auto;
+    }
+}
+
+@media screen and (max-width:576px){
+    .contact{
+        padding: 4.5rem 2rem;
+    }
 }
