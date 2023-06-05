@@ -28,7 +28,7 @@ export default function Contact() {
                             <input type="text" className="contact__input" placeholder='Your Email Address' />
                             <input type="text" className="contact__input" placeholder='Subject' />
                             <input type="text" className="contact__input" placeholder='Estimated Budget' />
-                            <textarea className='contact__input contact__input--textarea' name="" id="" cols="30" rows="10" placeholder='Enter Your Message'></textarea>
+                            <textarea className='contact__input contact__input--textarea' name="" id="" cols="30" rows="7" placeholder='Enter Your Message'></textarea>
                             <button type='submit' className='contact__Submit'>Submit</button>
                         </form>
                     </div>

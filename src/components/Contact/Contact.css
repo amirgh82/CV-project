@@ -7,12 +7,27 @@
     background-image: url(../../../public/images/map.jpg);
     background-position: center;
     background-size: cover;
-    height: 60rem;
+    height: 78rem;
+    padding: 5rem 0;
 }
 
-.contactus__map {}
+.contactus__map {
+    width: 6rem;
+    height: 6rem;
+    border-radius: 100%;
+    background-color: var(--app-bg-color);
+    box-shadow: 0 0 4rem rgba(96, 233, 255, 27%);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    position: absolute;
+    top: 35%;
+    left: 20%;
+}
 
-.contactus__icon {}
+.contactus__icon {
+    width: 2rem;
+}
 
 .contact {
     background-color: var(--app-bg-color);
@@ -39,9 +54,30 @@
 .contact__input {
     border: none;
     outline: none;
-    padding: 1.5rem 2rem;
+    padding: 1.5rem 2.5rem;
+    box-shadow: 0 0 4rem rgba(96, 233, 255, 27%);
+    border-radius: 1rem;
+    color: var(--text-color);
 }
 
-.contact__input--textarea {}
+.contact__input::placeholder {
+    color: inherit;
+}
 
-.contact__Submit {}
+.contact__input--textarea {
+    resize: vertical;
+    max-height: 15rem;
+    min-height: 8rem;
+}
+
+.contact__Submit {
+    background-color: var(--primary-color);
+    color: #fff;
+    border: none;
+    outline: none;
+    padding: 1.5rem;
+    border-radius: 5rem;
+    font-family: 'Poppins SemiBold';
+    font-size: 1.8rem;
+    cursor: pointer;
+}
