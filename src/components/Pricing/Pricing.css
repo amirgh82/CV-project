@@ -1,0 +1,61 @@
+.pricing {
+    margin-top: 20rem;
+    box-shadow: 0 0 6rem rgba(19, 182, 255, 24%);
+    padding: 8rem 0 12rem 0;
+    transform: skewY(-6deg);
+    background-color: var(--section-bg-color);
+}
+
+.package {
+    box-shadow: 0 0 5rem rgba(96, 233, 255, 27%);
+}
+
+.package__head {
+    color: #fff;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 1rem;
+    padding: 3rem 0;
+}
+
+.package__type {
+    margin: 0;
+    font-family: 'Poppins SemiBold';
+    font-size: 3.2rem;
+}
+
+.package__price {
+    font-family: 'Poppins SemiBold';
+    font-size: 2.6rem;
+    display: block;
+    margin-bottom: 0.5rem;
+}
+
+.package__filter {}
+
+.package__body {
+    padding: 3rem 0;
+}
+
+.package-options {
+    width: 16rem;
+    margin: 0 auto;
+}
+
+.package-options__item {
+    margin: 0 0 2rem 0;
+}
+
+.package__head--orange {
+    background-color: #ff6331;
+}
+
+.package__head--purple {
+    background-color: #803afb;
+}
+
+.package__head--pink {
+    background-color: #f5276c;
+}
