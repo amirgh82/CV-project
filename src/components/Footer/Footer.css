@@ -27,10 +27,16 @@
     display: flex;
     justify-content: center;
     align-items: center;
-    color:var(--app-bg-color);
+    color: var(--app-bg-color);
     transition: all 0.2s ease;
 }
 
-.footer__social-link:hover{
+.footer__social-link:hover {
     background-color: var(--primary-color);
+}
+
+@media screen and (max-width:576px) {
+    .footer__wrapper {
+        flex-wrap: wrap;
+    }
 }
