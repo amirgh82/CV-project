@@ -101,6 +101,9 @@
 }
 
 @media screen and (max-width:762px) {
+    .home{
+        margin-top: 4rem;
+    }
     .home__photo {
         border-width: 1.5rem;
     }

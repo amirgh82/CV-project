@@ -1,8 +1,8 @@
 .resume {
-    margin-top: 20rem;
+    margin-top: 8rem;
     box-shadow: 0 0 6rem rgba(19, 182, 255, 24%);
     padding: 8rem 0;
-    transform: skewY(-6deg);
+    transform:translateZ(0) skewY(-6deg);
     background-color: var(--section-bg-color);
 }
 

@@ -88,3 +88,9 @@
         padding: 2rem 4rem;
     }
 }
+
+@media screen and (max-width:576px){
+    .about__content{
+        padding: 2rem;
+    }
+} 

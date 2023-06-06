@@ -52,18 +52,18 @@ Helpers class
 
 */
 
-.align-items-center{
+.align-items-center {
     align-items: center;
 }
 
-.justify-content-center{
+.justify-content-center {
     justify-content: center;
 }
 
-.skew-reset{
-    transform: skewY(6deg);
+.skew-reset {
+    transform: translateZ(0) skewY(6deg);
 }
 
-.h-full{
+.h-full {
     height: 100%;
 }
